@@ -28,3 +28,11 @@ class CFGStudent(Student):
         average_marks = total_marks / len(self.subjects)
 
         print(f"Average Marks for {self.name}: {average_marks}")
+
+
+shiwani = CFGStudent('shiwani', 29, 10)
+shiwani.add_subject({'title': 'python', 'marks': 90})
+shiwani.add_subject({'title': 'mysql', 'marks': 95})
+
+shiwani.view_subjects()
+shiwani.view_marks()
