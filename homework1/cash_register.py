@@ -29,3 +29,19 @@ class CashRegister:
         self.total_price = 0
         self.discount = 0
 
+
+cash_register = CashRegister()
+
+item_apple = {"item": "apple", "price": 10}
+cash_register.add_item(item_apple)
+
+item_banana = {"item": "banana", "price": 8}
+cash_register.add_item(item_banana)
+
+items = cash_register.show_items()
+
+cash_register.apply_discount(2)
+
+total = cash_register.get_total()
+
+print(f"Total Amount: {total}")
